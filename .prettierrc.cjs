@@ -1,16 +1,17 @@
 module.exports = {
-    semi: false,
-    singleQuote: true,
+    semi: true,
+    singleQuote: false,
     tabWidth: 2,
     useTabs: true,
-    plugins: [require('prettier-plugin-astro')],
+    plugins: [
+      require("prettier-plugin-astro")
+    ],
     overrides: [
       {
-        files: '**/*.astro',
+        files: "**/*astro",
         options: {
-          parser: 'astro',
+          parser: "astro",
         },
       },
     ],
-  }
-  
+  };
